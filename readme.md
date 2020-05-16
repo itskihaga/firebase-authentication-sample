@@ -1,1 +1,1 @@
-# Firebase Authentication Sample
+# mono-react-node-template

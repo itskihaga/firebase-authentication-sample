@@ -1,0 +1,14 @@
+{
+  "name": "mono-react-node-template",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "lerna run start --parallel",
+    "postinstall": "lerna bootstrap"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "lerna": "^3.21.0"
+  }
+}
