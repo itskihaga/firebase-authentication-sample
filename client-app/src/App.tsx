@@ -9,6 +9,7 @@ const axios = Axios.create({
 
 interface User {
   name:string;
+  comment:string;
 }
 
 function App() {
@@ -16,7 +17,8 @@ function App() {
   useEffect(() => {
     axios.get('/secret/user').then(({data}) => {
       setUserState({
-        name: data.name
+        name: data.name,
+        comment:data.comment
       })
     })
   },[])
@@ -24,7 +26,10 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        {userState && <p>{userState.name}</p>}
+        {userState && <div>
+            <p>Hi {userState.name}!!</p>
+            <p>{userState.comment}</p>
+        </div>}
       </header>
     </div>
   );

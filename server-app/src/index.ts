@@ -11,8 +11,8 @@ app.use(express.urlencoded({ extended: true }))
 const router: express.Router = express.Router()
 router.get('/secret/user', (req:express.Request, res:express.Response) => {
   res.json({
-    name:'Joe',
-    comment:'Hello World!!'
+    name:'[your name]',
+    comment:'Welcome!!'
   })
 })
 app.use(router)
